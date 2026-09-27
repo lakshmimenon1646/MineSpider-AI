@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>
+MineSpider / AI Report
+</title>
+
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<aside class="sidebar">
+
+    <div class="brand">
+
+        <div class="brand-icon">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <strong>MS</strong>
+
+        </div>
+
+        <div>
+
+            <h1>MINESPIDER</h1>
+
+            <small>
+                AUTONOMOUS MINE INTELLIGENCE
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <div class="side-menu">
+
+        <a
+            href="{{ url_for('index') }}"
+            class="menu-item active"
+        >
+
+            <span class="menu-icon">◈</span>
+
+            <span>MISSION CONTROL</span>
+
+        </a>
+
+
+        <div class="menu-item">
+
+            <span class="menu-icon">⌁</span>
+
+            <span>ROBOT STATUS</span>
+
+        </div>
+
+
+        <div class="menu-item">
+
+            <span class="menu-icon">◎</span>
+
+            <span>AI ANALYSIS</span>
+
+        </div>
+
+
+        <div class="menu-item">
+
+            <span class="menu-icon">◇</span>
+
+            <span>HAZARD MAP</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="sidebar-bottom">
+
+        <div class="connection">
+
+            <span class="green-dot"></span>
+
+            <div>
+
+                <strong>SYSTEM ONLINE</strong>
+
+                <small>Analysis complete</small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</aside>
+
+
+
+<main class="main">
+
+
+<header class="topbar">
+
+    <div>
+
+        <span class="page-label">
+            AI ANALYSIS / REPORT
+        </span>
+
+        <h2>
+            Inspection Result
+        </h2>
+
+    </div>
+
+
+    <a
+        href="{{ url_for('index') }}"
+        class="new-scan"
+    >
+        + NEW SCAN
+    </a>
+
+</header>
+
+
+
+<section class="result-layout">
+
+
+    <div class="result-image-card">
+
+        <div class="result-image-header">
+
+            <div>
+
+                <span>
+                    ANNOTATED CAMERA FRAME
+                </span>
+
+                <strong>
+                    MINESPIDER AI OUTPUT
+                </strong>
+
+            </div>
+
+            <div class="legend">
+
+                <span class="blue-dot"></span>
+                PERSON
+
+                <span class="red-dot"></span>
+                ROCKFALL
+
+            </div>
+
+        </div>
+
+
+        <div class="result-image">
+
+            <img
+                src="{{ result_image }}"
+                alt="MineSpider result"
+            >
+
+        </div>
+
+    </div>
+
+
+
+    <aside class="result-panel">
+
+
+        <div class="alert-box {{ status_type }}">
+
+            <small>
+                AI ASSESSMENT
+            </small>
+
+            <h1>
+                {{ status }}
+            </h1>
+
+            <div class="alert-pulse"></div>
+
+        </div>
+
+
+
+        <div class="count-grid">
+
+
+            <div class="count-card person-count">
+
+                <small>
+                    PERSONS
+                </small>
+
+                <strong>
+                    {{ persons }}
+                </strong>
+
+                <span>
+                    HUMAN DETECTIONS
+                </span>
+
+            </div>
+
+
+            <div class="count-card rock-count">
+
+                <small>
+                    ROCKFALLS
+                </small>
+
+                <strong>
+                    {{ rocks }}
+                </strong>
+
+                <span>
+                    HAZARD DETECTIONS
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="report-section">
+
+            <div class="report-title">
+                MODEL STATUS
+            </div>
+
+
+            <div class="model-row">
+
+                <span class="model-color blue-dot"></span>
+
+                <div>
+
+                    <strong>
+                        PERSON MODEL
+                    </strong>
+
+                    <small>
+                        YOLOv8n
+                    </small>
+
+                </div>
+
+                <b>
+                    0.40
+                </b>
+
+            </div>
+
+
+            <div class="model-row">
+
+                <span class="model-color red-dot"></span>
+
+                <div>
+
+                    <strong>
+                        ROCKFALL MODEL
+                    </strong>
+
+                    <small>
+                        YOLOv8n
+                    </small>
+
+                </div>
+
+                <b>
+                    0.45
+                </b>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="operator-note">
+
+            <div class="note-icon">
+                !
+            </div>
+
+            <div>
+
+                <strong>
+                    OPERATOR REVIEW
+                </strong>
+
+                <p>
+
+                    AI detections should be verified
+                    by the operator before treating
+                    them as confirmed field events.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <a
+            href="{{ url_for('index') }}"
+            class="full-button"
+        >
+
+            RUN ANOTHER INSPECTION
+
+            <span>
+                →
+            </span>
+
+        </a>
+
+
+    </aside>
+
+</section>
+
+
+
+<footer>
+
+    <span>
+        MINESPIDER AI COMMAND CENTER
+    </span>
+
+    <span>
+        SIH'26 PROTOTYPE / OPERATOR ASSISTED
+    </span>
+
+</footer>
+
+
+</main>
+
+</body>
+
+</html>

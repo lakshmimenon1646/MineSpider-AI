@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>MineSpider Command Center</title>
+
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     SIDEBAR
+====================================================== -->
+
+<aside class="sidebar">
+
+    <div class="brand">
+
+        <div class="brand-icon">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <strong>MS</strong>
+
+        </div>
+
+        <div>
+
+            <h1>MINESPIDER</h1>
+
+            <small>
+                AUTONOMOUS MINE INTELLIGENCE
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <div class="side-menu">
+
+        <div class="menu-item active">
+
+            <span class="menu-icon">◈</span>
+
+            <span>MISSION CONTROL</span>
+
+        </div>
+
+
+        <div class="menu-item">
+
+            <span class="menu-icon">⌁</span>
+
+            <span>ROBOT STATUS</span>
+
+        </div>
+
+
+        <div class="menu-item">
+
+            <span class="menu-icon">◎</span>
+
+            <span>AI ANALYSIS</span>
+
+        </div>
+
+
+        <div class="menu-item">
+
+            <span class="menu-icon">◇</span>
+
+            <span>HAZARD MAP</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="sidebar-bottom">
+
+        <div class="connection">
+
+            <span class="green-dot"></span>
+
+            <div>
+
+                <strong>SYSTEM ONLINE</strong>
+
+                <small>Local AI node connected</small>
+
+            </div>
+
+        </div>
+
+
+        <div class="version">
+
+            MINESPIDER / SIH'26
+
+        </div>
+
+    </div>
+
+</aside>
+
+
+
+<!-- =====================================================
+     MAIN
+====================================================== -->
+
+<main class="main">
+
+
+    <!-- TOP BAR -->
+
+    <header class="topbar">
+
+        <div>
+
+            <span class="page-label">
+                UNDERGROUND OPERATIONS
+            </span>
+
+            <h2>
+                Mission Control
+            </h2>
+
+        </div>
+
+
+        <div class="top-status">
+
+            <div class="status-block">
+
+                <small>AI ENGINE</small>
+
+                <strong>
+                    <i class="green-dot"></i>
+                    ONLINE
+                </strong>
+
+            </div>
+
+
+            <div class="status-block">
+
+                <small>MODE</small>
+
+                <strong>
+                    INSPECTION
+                </strong>
+
+            </div>
+
+
+            <div class="status-block">
+
+                <small>UNIT</small>
+
+                <strong>
+                    MS-01
+                </strong>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================================
+         DASHBOARD GRID
+    ================================================== -->
+
+    <section class="dashboard-grid">
+
+
+        <!-- HERO -->
+
+        <div class="hero-card">
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    MISSION 001 / SECTOR A
+                </div>
+
+                <h1>
+
+                    EXPLORE.<br>
+
+                    <span>DETECT.</span><br>
+
+                    SURVIVE.
+
+                </h1>
+
+                <p>
+
+                    AI-assisted underground inspection
+                    for human presence and rockfall hazards.
+
+                </p>
+
+            </div>
+
+
+            <div class="radar">
+
+                <div class="radar-ring ring1"></div>
+
+                <div class="radar-ring ring2"></div>
+
+                <div class="radar-ring ring3"></div>
+
+                <div class="radar-cross horizontal"></div>
+
+                <div class="radar-cross vertical"></div>
+
+                <div class="radar-sweep"></div>
+
+                <div class="radar-point p1"></div>
+
+                <div class="radar-point p2"></div>
+
+                <div class="radar-center">
+
+                    MS
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ROBOT CARD -->
+
+        <div class="robot-card">
+
+            <div class="card-header">
+
+                <span>
+                    ROBOT TELEMETRY
+                </span>
+
+                <b>
+                    LIVE
+                </b>
+
+            </div>
+
+
+            <div class="robot-visual">
+
+                <div class="robot-grid">
+
+                    <div class="robot-body">
+
+                        <div class="robot-eye"></div>
+
+                    </div>
+
+                    <div class="leg l1"></div>
+                    <div class="leg l2"></div>
+                    <div class="leg l3"></div>
+                    <div class="leg l4"></div>
+                    <div class="leg l5"></div>
+                    <div class="leg l6"></div>
+
+                </div>
+
+            </div>
+
+
+            <div class="robot-name">
+
+                <strong>
+                    MINESPIDER MS-01
+                </strong>
+
+                <span>
+                    HEXAPOD EXPLORATION UNIT
+                </span>
+
+            </div>
+
+
+            <div class="telemetry-grid">
+
+                <div>
+                    <small>BATTERY</small>
+                    <strong>86%</strong>
+                </div>
+
+                <div>
+                    <small>TEMP</small>
+                    <strong>28.4°C</strong>
+                </div>
+
+                <div>
+                    <small>HUMIDITY</small>
+                    <strong>71%</strong>
+                </div>
+
+                <div>
+                    <small>LINK</small>
+                    <strong>98%</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- AI MODULES -->
+
+        <div class="ai-card">
+
+            <div class="card-header">
+
+                <span>
+                    AI DETECTION CORE
+                </span>
+
+                <b>
+                    02 MODULES
+                </b>
+
+            </div>
+
+
+            <div class="ai-module person-module">
+
+                <div class="module-symbol">
+                    P
+                </div>
+
+                <div class="module-info">
+
+                    <strong>
+                        PERSON DETECTION
+                    </strong>
+
+                    <small>
+                        Survivor / worker recognition
+                    </small>
+
+                </div>
+
+                <div class="module-state">
+                    ONLINE
+                </div>
+
+            </div>
+
+
+            <div class="ai-module rock-module">
+
+                <div class="module-symbol">
+                    R
+                </div>
+
+                <div class="module-info">
+
+                    <strong>
+                        ROCKFALL DETECTION
+                    </strong>
+
+                    <small>
+                        Obstruction / collapse recognition
+                    </small>
+
+                </div>
+
+                <div class="module-state">
+                    ONLINE
+                </div>
+
+            </div>
+
+
+            <div class="ai-footer">
+
+                <div>
+
+                    <small>PERSON THRESHOLD</small>
+
+                    <strong>0.40</strong>
+
+                </div>
+
+                <div>
+
+                    <small>ROCKFALL THRESHOLD</small>
+
+                    <strong>0.45</strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- IMAGE SCANNER -->
+
+        <div class="scanner-card">
+
+            <div class="scanner-header">
+
+                <div>
+
+                    <span>
+                        VISUAL INSPECTION
+                    </span>
+
+                    <h3>
+                        Upload inspection frame
+                    </h3>
+
+                </div>
+
+                <div class="scan-number">
+                    01
+                </div>
+
+            </div>
+
+
+            {% if error %}
+
+            <div class="error">
+                {{ error }}
+            </div>
+
+            {% endif %}
+
+
+            <form
+                method="POST"
+                enctype="multipart/form-data"
+                id="uploadForm"
+            >
+
+                <label
+                    class="upload-zone"
+                    id="uploadZone"
+                >
+
+                    <input
+                        type="file"
+                        name="image"
+                        id="imageInput"
+                        accept=".jpg,.jpeg,.png,.webp"
+                        required
+                    >
+
+
+                    <div class="target">
+
+                        <div class="target-corner c1"></div>
+                        <div class="target-corner c2"></div>
+                        <div class="target-corner c3"></div>
+                        <div class="target-corner c4"></div>
+
+                        <span>+</span>
+
+                    </div>
+
+
+                    <h3 id="fileName">
+                        SELECT IMAGE
+                    </h3>
+
+                    <p id="fileInfo">
+                        Drag & drop inspection frame
+                    </p>
+
+                    <small>
+                        JPG / PNG / WEBP
+                    </small>
+
+                </label>
+
+
+                <div
+                    class="preview-container"
+                    id="previewContainer"
+                >
+
+                    <img
+                        id="previewImage"
+                        alt="Preview"
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="scan-button"
+                    id="scanButton"
+                >
+
+                    <span>
+                        RUN MINESPIDER AI
+                    </span>
+
+                    <b>
+                        →
+                    </b>
+
+                </button>
+
+            </form>
+
+        </div>
+
+
+
+        <!-- MAP -->
+
+        <div class="map-card">
+
+            <div class="card-header">
+
+                <span>
+                    MINE SECTOR MAP
+                </span>
+
+                <b>
+                    A-01
+                </b>
+
+            </div>
+
+
+            <div class="mine-map">
+
+                <div class="tunnel tunnel-main"></div>
+
+                <div class="tunnel tunnel-left"></div>
+
+                <div class="tunnel tunnel-right"></div>
+
+                <div class="map-node node1"></div>
+
+                <div class="map-node node2"></div>
+
+                <div class="map-node node3"></div>
+
+                <div class="map-node node4"></div>
+
+                <div class="robot-location">
+
+                    <span>MS</span>
+
+                </div>
+
+                <div class="map-label label1">
+                    ENTRY
+                </div>
+
+                <div class="map-label label2">
+                    MS-01
+                </div>
+
+            </div>
+
+
+            <div class="map-footer">
+
+                <span>
+                    ● ROBOT
+                </span>
+
+                <span>
+                    ━ ROUTE
+                </span>
+
+                <span>
+                    ○ NODE
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <footer>
+
+        <span>
+            MINESPIDER AI COMMAND CENTER
+        </span>
+
+        <span>
+            OPERATOR-ASSISTED PROTOTYPE
+        </span>
+
+    </footer>
+
+
+</main>
+
+
+<script
+src="{{ url_for('static', filename='js/app.js') }}">
+</script>
+
+</body>
+
+</html>
